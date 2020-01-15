@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Agência Trii</title>
+    <script>
+        function confirmed(){
+            alert("Formulário enviado com sucesso! Agradecemos seu contato!");
+        }
+        </script>
+</head>
+<body>
+    <section id = "forms">
+        <div class = "content">
+            <h2>Peça seu orçamento agora mesmo!</h2>
+            <form autocomplete="off" name="contact_form" onsubmit="confirmed()">
+                <div class= "first">
+                    <div class = "texto">
+                        <input type="text" name="name" required="" >
+                        <label>Nome</label>
+                    </div>
+                    <div class = "e-mail">
+                        <input type="email" name="email" required=""><br>
+                            <label>E-mail</label>
+                    </div>
+                </div>
+                <div class = "second">
+                    <div class="phone">
+                        <input type="tel" name="phone"  required="">
+                        <label>Telefone</label>
+                    </div>
+                    <select name="service" required="">
+                        <option value="" disabled selected>Escolha o serviço que deseja</option>
+                        <option value="websites">Websites</option>
+                        <option value="logo">Logo</option>
+                        <option value=" visual_id ">Identidade Visual</option>
+                        <option value="card">Cartão de visitas</option>
+                      </select>
+                </div>
+                <div class="third">
+                    <input type="text" name="message" required=""></input>
+                    <label>Mensagem</label>
+                </div>
+                <div class="button">
+                    <input type="submit">
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+</body>
+</html>

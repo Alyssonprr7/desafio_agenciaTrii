@@ -1,0 +1,191 @@
+
+body{
+    background-color: #9DDDFF;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#forms .content {
+    width: 60%;
+    height: 90%;
+    background-color: white;
+    margin-left: 20%;
+    border-radius: 8px;
+    box-shadow: 3px 3px 10px rgb(141, 141, 141);
+}
+
+#forms .content h2 {
+    color: 	#9C9C9C;
+    text-align: center;
+    padding-top: 5%;
+    font-weight: 700;
+}
+
+select {
+    padding-left: 2%;
+    color: rgb(39, 39, 39);
+	width:100px;
+	float:left;
+	appearance:none;
+	-webkit-appearance:none;
+	-moz-appearance:none;
+	-ms-appearance:none;
+	background:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAJ1BMVEUAAACf3f+c3f+d3f+d3f+c3P+d3f+e3v+d3f+d3v+c3f+d3f8AAAAQg44GAAAAC3RSTlMASnfx8Gf+ZP1rS1dXyvoAAAABYktHRACIBR1IAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAB3RJTUUH4wwWDzIG48mQtwAAAEBJREFUCNdjYMANhJTAQJHBejcYbGEIgzBSGdi7QfS2CQwMFSBGJlA1SAgkABbKBBvA3g0RAAplQs3kWsCAFwAAKbAdB8c3rn0AAAAldEVYdGRhdGU6Y3JlYXRlADIwMTktMTItMjJUMTU6NTA6MDYrMDA6MDAE+l4BAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDE5LTEyLTIyVDE1OjUwOjA2KzAwOjAwdafmvQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAAASUVORK5CYII=");
+	background-repeat:no-repeat;
+    background-size:13px 13px;
+    background-position:95% 50%;
+}
+
+
+/*################### FORM INPUTS ##############*/
+#forms .content input{
+    width: 300px;
+    height: 40px;
+    margin-top: 3%;
+    border-radius: 4px;
+    border-style: solid;
+    border-color: #9C9C9C;
+    border-width: thin;
+    text-indent: 13px;
+}
+
+#forms .content select{
+    width: 304.5px;
+    height: 45px;
+    margin-top: 1.3%;
+    border-radius: 4px;
+    border-style: solid;
+}
+
+#forms .content .third input{
+    width: 645px;
+    height: 100px;
+}
+
+#forms .content .button input{
+    background-color: 	#0076C1;
+    width: 13%;
+    color: white;
+    border: none;
+    box-shadow: 3px 3px 10px rgb(141, 141, 141);
+    text-indent: unset;
+}
+
+#forms .content .button{
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 10%;
+    padding-bottom: 7%;
+}
+
+/*################### DIVS ##############*/
+
+#forms .content .first{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+#forms .content .second{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+#forms .content .third{
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+/*################### TRANSITION ON FOCUS ##############*/
+
+/*################### NAME ON FOCUS ##############*/
+#forms .content form .texto {
+    position: relative;
+}
+
+#forms .content form .texto label {
+    position: absolute;
+    top: 21px;
+    pointer-events: none;
+    left: 15px;
+    color: #999;
+    transition: .5s;
+}
+
+#forms .content form .texto input:focus ~ label,
+#forms .content form .texto input:valid ~ label{
+    top: 10px;
+    left: 15px;
+    color: #0076C1;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+/*################### E-MAIL ON FOCUS ##############*/
+#forms .content form .e-mail {
+    position: relative;
+}
+
+#forms .content form .e-mail label {
+    position: absolute;
+    top: 21px;
+    pointer-events: none;
+    left: 15px;
+    color: #999;
+    transition: .5s;
+}
+
+#forms .content form .e-mail input:focus ~ label,
+#forms .content form .e-mail input:valid ~ label{
+    top: 10px;
+    left: 15px;
+    color: #0076C1;
+    font-size: 12px;
+    font-weight: bold;
+}
+/*################### PHONE ON FOCUS ##############*/
+#forms .content form .phone {
+    position: relative;
+}
+
+#forms .content form .phone label {
+    position: absolute;
+    top: 21px;
+    pointer-events: none;
+    left: 15px;
+    color: #999;
+    transition: .5s;
+}
+
+#forms .content form .phone input:focus ~ label,
+#forms .content form .phone input:valid ~ label{ /*Somente quando digita-se na forma correta o e-mail, se eleva e mantém o placeholder*/
+    top: 10px;
+    left: 15px;
+    color: #0076C1;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+/*################### MESSAGE ON FOCUS ##############*/
+#forms .content form .third {
+    position: relative;
+}
+
+#forms .content form .third label {
+    position: absolute;
+    top: 35px;
+    pointer-events: none;
+    left: 100px;
+    color: #999;
+    transition: .5s;
+}
+
+#forms .content form .third input:focus ~ label,
+#forms .content form .third input:valid ~ label{
+    top: 20px;
+    left: 100px;
+    color: #0076C1;
+    font-size: 12px;
+    font-weight: bold;
+}
